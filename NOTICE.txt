@@ -1,0 +1,5 @@
+deepbeat
+Copyright 2018 Deep IT
+
+This product includes software developed by The Apache Software
+Foundation (http://www.apache.org/).
