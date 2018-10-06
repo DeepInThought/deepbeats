@@ -5,12 +5,12 @@ SYSTEM_TESTS=true
 TEST_ENVIRONMENT=true
 ES_BEATS?=./vendor/github.com/elastic/beats
 GOPACKAGES=$(shell govendor list -no-status +local)
-GOBUILD_FLAGS=-i -ldflags "-X $(BEAT_PATH)/vendor/github.com/elastic/beats/libbeat/version.buildTime=$(NOW) -X $(BEAT_PATH)/vendor/github.com/elastic/beats/libbeat/version.commit=$(COMMIT_ID)"
+GOBUILD_FLAGS=-i -ldflags "-X $(BEAT_PATH)/vendor/github.com/DeepInThought/deepbeats/version.buildTime=$(NOW) -X $(BEAT_PATH)/vendor/github.com/DeepInThought/deepbeats/version.commit=$(COMMIT_ID)"
 MAGE_IMPORT_PATH=${BEAT_PATH}/vendor/github.com/magefile/mage
 BUILD_DIR=$(CURDIR)/build
 COVERAGE_DIR=$(BUILD_DIR)/coverage
 BEATS?=auditbeat filebeat heartbeat metricbeat packetbeat winlogbeat
-PROJECTS=$(BEAT_NAME)
+PROJECTS=$(BEAT_GOPATH)/src/$(BEAT_PATH)/vendor/
 PROJECTS_ENV=$(BEAT_NAME)
 PYTHON_ENV?=$(BUILD_DIR)/python-env/activate
 VIRTUALENV_PARAMS?=
