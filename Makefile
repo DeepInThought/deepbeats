@@ -1,8 +1,8 @@
 BEAT_NAME=deepbeats
 BEAT_PATH=github.com/DeepInThought/deepbeats
 BEAT_GOPATH=$(firstword $(subst :, ,${GOPATH}))
-SYSTEM_TESTS=false
-TEST_ENVIRONMENT=false
+SYSTEM_TESTS=true
+TEST_ENVIRONMENT=true
 ES_BEATS?=./vendor/github.com/elastic/beats
 GOPACKAGES=$(shell govendor list -no-status +local)
 GOBUILD_FLAGS=-i -ldflags "-X $(BEAT_PATH)/vendor/github.com/elastic/beats/libbeat/version.buildTime=$(NOW) -X $(BEAT_PATH)/vendor/github.com/elastic/beats/libbeat/version.commit=$(COMMIT_ID)"
