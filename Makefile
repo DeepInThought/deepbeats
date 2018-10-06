@@ -1,4 +1,4 @@
-BEAT_NAME=deepbeat
+BEAT_NAME=deepbeats
 BEAT_PATH=github.com/DeepInThought/deepbeats
 BEAT_GOPATH=$(firstword $(subst :, ,${GOPATH}))
 SYSTEM_TESTS=false
@@ -31,7 +31,7 @@ git-init:
 .PHONY: git-add
 git-add:
 	git add -A
-	git commit -m "Add generated deepbeat files"
+	git commit -m "Add generated deepbeats files"
 
 # Collects all dependencies and then calls update
 .PHONY: collect

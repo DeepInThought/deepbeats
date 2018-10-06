@@ -1,12 +1,12 @@
 package main
 
-// This file is mandatory as otherwise the deepbeat.test binary is not generated correctly.
+// This file is mandatory as otherwise the deepbeats.test binary is not generated correctly.
 
 import (
 	"flag"
 	"testing"
 
-	"github.com/DeepInThought/deepbeat/cmd"
+	"github.com/DeepInThought/deepbeats/cmd"
 )
 
 var systemTest *bool

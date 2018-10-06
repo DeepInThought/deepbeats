@@ -6,6 +6,6 @@ REM
 REM After running this once you may invoke mage.exe directly.
 
 WHERE mage
-IF %ERRORLEVEL% NEQ 0 go install github.com/DeepInThought/deepbeat/vendor/github.com/magefile/mage
+IF %ERRORLEVEL% NEQ 0 go install github.com/DeepInThought/deepbeats/vendor/github.com/magefile/mage
 
 mage %*

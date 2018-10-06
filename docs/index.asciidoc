@@ -1,5 +1,5 @@
-= Deepbeat Docs
+= Deepbeats Docs
 
-Welcome to the Deepbeat documentation.
+Welcome to the Deepbeats documentation.
 
 

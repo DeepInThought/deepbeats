@@ -1,5 +1,5 @@
-- key: deepbeat
-  title: deepbeat
+- key: deepbeats
+  title: deepbeats
   description:
   fields:
     - name: counter

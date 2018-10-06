@@ -1,7 +1,7 @@
-################### Deepbeat Configuration Example #########################
+################### Deepbeatss Configuration Example #########################
 
-############################# Deepbeat ######################################
+############################# Deepbeatss ######################################
 
-deepbeat:
+deepbeats:
   # Defines how often an event is sent to the output
   period: 1s

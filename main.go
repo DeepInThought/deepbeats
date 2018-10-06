@@ -4,8 +4,6 @@ import (
 	"os"
 
 	"github.com/DeepInThought/deepbeats/cmd"
-
-	_ "github.com/DeepInThought/deepbeats/include"
 )
 
 func main() {
