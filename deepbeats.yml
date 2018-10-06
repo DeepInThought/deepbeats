@@ -1,6 +1,6 @@
-################### Deepbeatss Configuration Example #########################
+################### Deepbeats Configuration Example #########################
 
-############################# Deepbeatss ######################################
+############################# Deepbeats ######################################
 
 deepbeats:
   # Defines how often an event is sent to the output

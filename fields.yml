@@ -7,13 +7,6 @@
       required: true
       description: >
         PLEASE UPDATE DOCUMENTATION
-
-- key: beat
-  title: Beat
-  description: >
-    Contains common beat fields available in all event types.
-  fields:
-
     - name: beat.name
       description: >
         The name of the Beat sending the log messages. If the Beat name is
@@ -1184,27 +1177,29 @@
   fields:
 
     - name: meta.cloud.provider
-      example: ec2
+      example: digitalocean
       description: >
         Name of the cloud provider. Possible values are ec2, gce, or digitalocean.
 
     - name: meta.cloud.instance_id
+      example: 110156829
       description: >
-        Instance ID of the host machine.
+        Instance ID of the host machine.  doctl compute droplet list
 
     - name: meta.cloud.instance_name
+      example: deep-docker-nyc3
       description: >
-        Instance name of the host machine.
+        Instance name of the host machine.  doctl compute droplet list
 
     - name: meta.cloud.machine_type
-      example: t2.medium
+      example: s-1vcpu-2gb
       description: >
-        Machine type of the host machine.
+        Machine type of the host machine.  doctl compute size list
 
     - name: meta.cloud.availability_zone
-      example: us-east-1c
+      example: nyc3
       description: >
-        Availability zone in which this host is running.
+        Availability zone in which this host is running.  doctl compute region list
 
     - name: meta.cloud.project_id
       example: project-x
@@ -1212,8 +1207,9 @@
         Name of the project in Google Cloud.
 
     - name: meta.cloud.region
+      example: nyc3
       description: >
-        Region in which this host is running.
+        Region in which this host is running.  doctl compute region list
 - key: docker
   title: Docker
   description: >

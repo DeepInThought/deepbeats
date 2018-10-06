@@ -1,18 +1,18 @@
-# Deepbeatss
+# Deepbeats
 
-Welcome to Deepbeatss.
+Welcome to Deepbeats.
 
 Ensure that this folder is at the following location:
 `${GOPATH}/src/github.com/DeepInThought/deepbeats`
 
-## Getting Started with Deepbeatss
+## Getting Started with Deepbeats
 
 ### Requirements
 
 * [Golang](https://golang.org/dl/) 1.7
 
 ### Init Project
-To get running with Deepbeatss and also install the
+To get running with Deepbeats and also install the
 dependencies, run the following command:
 
 ```
@@ -21,7 +21,7 @@ make setup
 
 It will create a clean git history for each major step. Note that you can always rewrite the history if you wish before pushing your changes.
 
-To push Deepbeatss in the git repository, run the following commands:
+To push Deepbeats in the git repository, run the following commands:
 
 ```
 git remote set-url origin https://github.com/DeepInThought/deepbeats
@@ -32,7 +32,7 @@ For further development, check out the [beat developer guide](https://www.elasti
 
 ### Build
 
-To build the binary for Deepbeatss run the command below. This will generate a binary
+To build the binary for Deepbeats run the command below. This will generate a binary
 in the same directory with the name deepbeats.
 
 ```
@@ -42,7 +42,7 @@ make
 
 ### Run
 
-To run Deepbeatss with debugging output enabled, run:
+To run Deepbeats with debugging output enabled, run:
 
 ```
 ./deepbeats -c deepbeats.yml -e -d "*"
@@ -51,7 +51,7 @@ To run Deepbeatss with debugging output enabled, run:
 
 ### Test
 
-To test Deepbeatss, run the following command:
+To test Deepbeats, run the following command:
 
 ```
 make testsuite
@@ -79,7 +79,7 @@ make update
 
 ### Cleanup
 
-To clean  Deepbeatss source code, run the following commands:
+To clean  Deepbeats source code, run the following commands:
 
 ```
 make fmt
@@ -95,7 +95,7 @@ make clean
 
 ### Clone
 
-To clone Deepbeatss from the git repository, run the following commands:
+To clone Deepbeats from the git repository, run the following commands:
 
 ```
 mkdir -p ${GOPATH}/src/github.com/DeepInThought/deepbeats
