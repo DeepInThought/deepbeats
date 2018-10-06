@@ -46,9 +46,9 @@ git-add:
 	git add -A
 	git commit -m "Add generated deepbeats files"
 
-# Collects all dependencies and then calls deep-update
-.PHONY: collect
-collect:
+.PHONY: get-testsuites
+get-testsuites:
+	@$(foreach var,$(PROJECTS),$(MAKE) -C $(var) get-testsuites || exit 1;)
 
 # Runs complete testsuites (unit, system, integration) for all beats with coverage and race detection.
 # Also it builds the docs and the generators
