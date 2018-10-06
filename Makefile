@@ -10,8 +10,8 @@ MAGE_IMPORT_PATH=${BEAT_PATH}/vendor/github.com/magefile/mage
 BUILD_DIR=$(CURDIR)/build
 COVERAGE_DIR=$(BUILD_DIR)/coverage
 BEATS?=auditbeat filebeat heartbeat metricbeat packetbeat winlogbeat
-PROJECTS=$(BEAT_NAME) $(ES_BEATS)
-PROJECTS_ENV=$(BEAT_NAME) $(ES_BEATS)
+PROJECTS=$(BEAT_NAME)
+PROJECTS_ENV=$(BEAT_NAME)
 PYTHON_ENV?=$(BUILD_DIR)/python-env/activate
 VIRTUALENV_PARAMS?=
 FIND=find . -type f -not -path "*/vendor/*" -not -path "*/build/*" -not -path "*/.git/*"
@@ -46,9 +46,9 @@ git-add:
 	git add -A
 	git commit -m "Add generated deepbeats files"
 
-.PHONY: get-testsuites
-get-testsuites:
-	@$(foreach var,$(PROJECTS),$(MAKE) -C $(var) get-testsuites || exit 1;)
+.PHONY: deep-testsuites
+deep-testsuites:
+	@$(foreach var,$(PROJECTS),$(MAKE) -C $(var) deep-testsuites || exit 1;)
 
 # Runs complete testsuites (unit, system, integration) for all beats with coverage and race detection.
 # Also it builds the docs and the generators
@@ -125,7 +125,7 @@ deep-snapshot:
 
 # Builds a release.
 .PHONY: deep-release
-deep-release: beats-dashboards
+deep-release: deep-beats-dashboards
 	@$(foreach var,$(ES_BEATS),$(MAKE) -C $(var) release || exit 1;)
 	@$(foreach var,$(ES_BEATS), \
       test -d $(var)/build/distributions && test -n "$$(ls $(var)/build/distributions)" || exit 0; \
