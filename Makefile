@@ -1,5 +1,5 @@
 BEAT_NAME=deepbeat
-BEAT_PATH=github.com/DeepInThought/deepbeat
+BEAT_PATH=github.com/DeepInThought/deepbeats
 BEAT_GOPATH=$(firstword $(subst :, ,${GOPATH}))
 SYSTEM_TESTS=false
 TEST_ENVIRONMENT=false
