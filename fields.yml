@@ -1,12 +1,7 @@
 - key: deepbeats
   title: deepbeats
-  description:
+  description: >
   fields:
-    - name: counter
-      type: long
-      required: true
-      description: >
-        PLEASE UPDATE DOCUMENTATION
     - name: beat.name
       description: >
         The name of the Beat sending the log messages. If the Beat name is
