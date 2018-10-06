@@ -3,9 +3,9 @@ package main
 import (
 	"os"
 
-	"github.com/DeepInThought/deepbeat/cmd"
+	"github.com/DeepInThought/deepbeats/cmd"
 
-	_ "github.com/DeepInThought/deepbeat/include"
+	_ "github.com/DeepInThought/deepbeats/include"
 )
 
 func main() {
