@@ -1,5 +1,5 @@
 deepbeats
-Copyright 2018 Deep IT
+Copyright 2018 Deep In Thought, LLC
 
 This product includes software developed by The Apache Software
 Foundation (http://www.apache.org/).
